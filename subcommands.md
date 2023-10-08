@@ -207,6 +207,33 @@ Perform a search for "Jenkins" and show line numbers:
 noted grep Jenkins -n
 ```
 
+## open
+
+Opens the `$NOTED_MARKDOWN_HOME` directory in VS Code.
+
+### Synopsis
+
+```shell
+noted open 
+```
+
+### Overview
+
+Opens the configured directory in VS Code, so it is easier to navigate through the notes.
+It is recommended to change the following variable in VS Code: `"window.newWindowDimensions": "maximized"`
+
+### Arguments & Flags
+
+N/A
+
+### Examples
+
+Open the notes directory:
+
+```shell
+noted open
+```
+
 ## todos
 
 Lists any todos that you have previously saved in your notes.

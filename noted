@@ -154,6 +154,8 @@ elif [[ "${subcommand}" == 'todos' ]]; then
   fgrep -rH "${NOTED_TODO_MARKER}" "${NOTED_MARKDOWN_HOME}" | fgrep -v ~~
   if [ 1 == $? ]; then echo "Congratulations! No TODOs found!"; fi
   echo
+elif [[ "${subcommand}" == 'open' ]]; then
+  code "${NOTED_MARKDOWN_HOME}"
 else
   # create / default
   OPTIONAL_FILE=""

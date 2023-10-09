@@ -75,7 +75,7 @@ markdownFile() {
 }
 
 ngrep() {
-  grep --recursive --exclude-dir=.git/ "$@" "${NOTED_MARKDOWN_HOME}"
+  grep --recursive -n --exclude-dir=.git/ "$@" "${NOTED_MARKDOWN_HOME}"
 }
 
 outputConfig() {
